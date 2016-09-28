@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="WorkingWithBigFiles.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/site.css" rel="stylesheet" type="text/css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Working with big files</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainForm" runat="server">
+        <div id="mainDiv" class="mainDiv col-md-8 center-block">
+            <div class="row">
+                <div class="jumbotron">
+                    <asp:ContentPlaceHolder ID="titleContainer" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <asp:ContentPlaceHolder ID="mainContainer" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-6">
+                    <asp:ContentPlaceHolder runat="server" ID="leftContainer">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-6">
+                    <asp:ContentPlaceHolder runat="server" ID="rightContainer">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="row buttonsDiv">
+                <asp:ContentPlaceHolder runat="server" ID="buttonsContainer">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <script src="/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/scripts/bootstrap.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+        
+</body>
+</html>

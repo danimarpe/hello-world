@@ -1,7 +1,12 @@
 ﻿body {
 }
 
-.main-container
+.mainDiv
 {
     float: none;
+}
+
+.buttonsDiv
+{
+    margin-top: 100px;
 }
