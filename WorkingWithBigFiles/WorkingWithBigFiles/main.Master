@@ -35,6 +35,10 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
+            <div class="row messageContainer">
+                <asp:ContentPlaceHolder runat="server" ID="messageContainer">
+                </asp:ContentPlaceHolder>
+            </div>
             <div class="row buttonsDiv">
                 <asp:ContentPlaceHolder runat="server" ID="buttonsContainer">
                 </asp:ContentPlaceHolder>

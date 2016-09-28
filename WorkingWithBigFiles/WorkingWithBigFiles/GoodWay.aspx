@@ -10,11 +10,17 @@
         <asp:FileUpload ID="FileGoodWay" CssClass="btn btn-default btn-file" runat="server" />
     </p>
     <p>
-        <asp:Button runat="server" Text="Try it!" CssClass="btn btn-default" />
+        <asp:Button runat="server" Text="Try it!" CssClass="btn btn-default" ID="BtnGoodWay" OnClick="BtnGoodWay_Click" />
     </p>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="buttonsContainer">
     <p>
         <a class="btn btn-default" href="../">Back</a>
+    </p>
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="messageContainer">
+    <p>
+        <asp:Label runat="server" ID="LabelSuccess" CssClass="successMessage" Visible="false"></asp:Label>
+        <asp:Label runat="server" ID="LabelFail" CssClass="failMessage" Visible="false"></asp:Label>
     </p>
 </asp:Content>

@@ -10,3 +10,13 @@
 {
     margin-top: 100px;
 }
+
+.successMessage
+{
+    color:darkgreen;
+}
+
+.failMessage
+{
+    color: darkred;
+}

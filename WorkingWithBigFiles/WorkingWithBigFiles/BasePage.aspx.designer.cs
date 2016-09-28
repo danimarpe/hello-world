@@ -10,24 +10,24 @@
 namespace WorkingWithBigFiles {
     
     
-    public partial class GoodWay {
+    public partial class BasePage {
         
         /// <summary>
-        /// Control FileGoodWay.
+        /// Control LabelSuccess.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileGoodWay;
+        protected global::System.Web.UI.WebControls.Label LabelSuccess;
         
         /// <summary>
-        /// Control BtnGoodWay.
+        /// Control LabelFail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnGoodWay;
+        protected global::System.Web.UI.WebControls.Label LabelFail;
     }
 }
