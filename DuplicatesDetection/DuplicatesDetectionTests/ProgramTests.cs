@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Configuration;
 using DuplicatesDetection.Entities;
+using System.Diagnostics;
 
 namespace DuplicatesDetection.Tests
 {
@@ -33,7 +34,7 @@ namespace DuplicatesDetection.Tests
             StringBuilder fileContent = new StringBuilder("");
             List<UserEntity> users = new List<UserEntity>();
 
-            var lines = File.ReadLines(this.filePath); // Read all lines of the file
+            List<string> lines = File.ReadLines(this.filePath).ToList(); // Read all lines of the file
 
             foreach (string line in lines)
             {
@@ -46,13 +47,26 @@ namespace DuplicatesDetection.Tests
         [TestMethod()]
         public void DetectDuplicatesLINQTest()
         {
-            var result = Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.LINQ);
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+            
+            Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.LINQ);
+            sw.Stop();
+
+            TimeSpan timeElapsed = sw.Elapsed;
         }
 
         [TestMethod()]
         public void DetectDuplicatesITERATIONTest()
         {
-            var result = Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.ITERATION);
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.ITERATION);
+
+            TimeSpan timeElapsed = sw.Elapsed;
         }
 
     }
