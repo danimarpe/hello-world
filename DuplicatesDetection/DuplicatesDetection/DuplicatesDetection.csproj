@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DuplicateDetectStrategy\ConcreteStrategies\DetectSameAddress.cs" />
-    <Compile Include="DuplicateDetectStrategy\ConcreteStrategies\DetectSameEmail.cs" />
-    <Compile Include="DuplicateDetectStrategy\DuplicateDetector.cs" />
+    <Compile Include="DataAccess\ConsoleData.cs" />
+    <Compile Include="DataAccess\ConsoleReader.cs" />
+    <Compile Include="DataAccess\ConsoleWriter.cs" />
+    <Compile Include="DuplicateDetectStrategy\LinqStrategies\DetectSameAddress.cs" />
+    <Compile Include="DuplicateDetectStrategy\LinqStrategies\DetectSameEmail.cs" />
+    <Compile Include="DuplicateDetectStrategy\DuplicateLinqDetector.cs" />
     <Compile Include="DuplicateDetectStrategy\IDuplicateDetect.cs" />
     <Compile Include="Entities\AddressEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
@@ -54,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DuplicateDetectStrategy\IterationStrategies\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
