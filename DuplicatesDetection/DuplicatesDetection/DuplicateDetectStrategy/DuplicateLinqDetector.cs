@@ -6,12 +6,12 @@ namespace DuplicatesDetection.DuplicateDetectStrategy
     /// <summary>
     /// Detects duplicate users
     /// </summary>
-    public class DuplicateDetector
+    public class DuplicateLinqDetector
     {
         IDuplicateDetect sameAddress;
         IDuplicateDetect sameEmail;
 
-        public DuplicateDetector()
+        public DuplicateLinqDetector()
         {
             sameAddress = new DetectSameAddress();
             sameEmail = new DetectSameEmail();
