@@ -7,7 +7,7 @@ namespace DuplicatesDetection.DuplicateDetectStrategy.IterationStrategies
 {
     public class DetectSameEmail : IDuplicateDetect
     {
-        public List<UserEntity> Detect(List<UserEntity> orders)
+        public List<UserEntity> Detect(List<UserEntity> users)
         {
             throw new NotImplementedException();
         }
