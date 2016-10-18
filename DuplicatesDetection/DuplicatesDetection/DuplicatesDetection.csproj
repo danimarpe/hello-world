@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DuplicateDetectStrategy\ConcreteStrategies\DetectSameAddress.cs" />
+    <Compile Include="DuplicateDetectStrategy\ConcreteStrategies\DetectSameEmail.cs" />
+    <Compile Include="DuplicateDetectStrategy\DuplicateDetector.cs" />
+    <Compile Include="DuplicateDetectStrategy\IDuplicateDetect.cs" />
     <Compile Include="Entities\AddressEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="Program.cs" />

@@ -13,6 +13,12 @@ namespace DuplicatesDetection.Entities
         public string State { get; set; }
         public string Zip_Code { get; set; }
 
+        /// <summary>
+        /// Check two Addresses to see if both are the same
+        /// Necessary if you want to use this class with LinQ comparers like Distinct(x.Address) or GroupBy(x.Address)
+        /// </summary>
+        /// <param name="addressObject"></param>
+        /// <returns></returns>
         public override bool Equals(object addressObject)
         {
             AddressEntity address = (AddressEntity)addressObject;
@@ -28,6 +34,11 @@ namespace DuplicatesDetection.Entities
                 return false;
         }
 
+        /// <summary>
+        /// Get the hash code
+        /// Necessary if you want to use this class with LinQ comparers like Distinct(x.Address) or GroupBy(x.Address)
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             int hash = 23 + 31 * Street.GetHashCode() + City.GetHashCode() + State.GetHashCode() + Zip_Code.GetHashCode();
