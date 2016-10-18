@@ -17,12 +17,12 @@ namespace DuplicatesDetection.DuplicateDetectStrategy
             sameEmail = new IterationStrategies.DetectSameEmail();
         }
 
-        public List<UserEntity> Detect(List<UserEntity> orders)
+        public List<UserEntity> Detect(List<UserEntity> users)
         {
-            List<UserEntity> fraudulent = sameAddress.Detect(orders);
-            fraudulent.AddRange(sameEmail.Detect(orders));
+            List<UserEntity> duplicates = sameAddress.Detect(users);
+            duplicates.AddRange(sameEmail.Detect(users));
 
-            return fraudulent;
+            return duplicates;
         }
     }
 }

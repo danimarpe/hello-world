@@ -46,6 +46,7 @@
     <Compile Include="DataAccess\ConsoleData.cs" />
     <Compile Include="DataAccess\ConsoleReader.cs" />
     <Compile Include="DataAccess\ConsoleWriter.cs" />
+    <Compile Include="DuplicateDetectStrategy\DetectionMode.cs" />
     <Compile Include="DuplicateDetectStrategy\DuplicateIterationDetector.cs" />
     <Compile Include="DuplicateDetectStrategy\IterationStrategies\DetectSameAddress.cs" />
     <Compile Include="DuplicateDetectStrategy\IterationStrategies\DetectSameEmail.cs" />
