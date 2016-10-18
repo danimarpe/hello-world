@@ -3,7 +3,7 @@ using DuplicatesDetection.Entities;
 
 namespace DuplicatesDetection.DataAccess
 {
-    public class ConsoleData
+    public class Data
     {
         private static ConsoleWriter writer { get; }
         private static ConsoleReader reader { get; }
@@ -23,9 +23,9 @@ namespace DuplicatesDetection.DataAccess
         /// </summary>
         /// <param name="orders"></param>
         /// <returns></returns>
-        public static string WriteUsers(List<UserEntity> orders)
+        public static string WriteUsers(List<UserEntity> users)
         {
-            return ConsoleWriter.WriteUsers(orders);
+            return ConsoleWriter.WriteUsers(users);
         }
 
 

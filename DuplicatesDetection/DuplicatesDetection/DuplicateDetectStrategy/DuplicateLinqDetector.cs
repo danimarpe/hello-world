@@ -6,7 +6,7 @@ namespace DuplicatesDetection.DuplicateDetectStrategy
     /// <summary>
     /// Detects duplicate users
     /// </summary>
-    public class DuplicateLinqDetector
+    public class DuplicateLinqDetector : DuplicateDetector
     {
         IDuplicateDetect sameAddress;
         IDuplicateDetect sameEmail;
@@ -17,7 +17,7 @@ namespace DuplicatesDetection.DuplicateDetectStrategy
             sameEmail = new LinqStrategies.DetectSameEmail();
         }
 
-        public List<UserEntity> Detect(List<UserEntity> users)
+        public override List<UserEntity> Detect(List<UserEntity> users)
         {
             List<UserEntity> duplicates = sameAddress.Detect(users);
             duplicates.AddRange(sameEmail.Detect(users));

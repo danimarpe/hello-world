@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DuplicatesDetection.DuplicateDetectStrategy
+namespace DuplicatesDetection.DataAccess
 {
-    public enum DetectionMode
+    public class FileData
     {
-        LINQ,
-        ITERATION
     }
 }

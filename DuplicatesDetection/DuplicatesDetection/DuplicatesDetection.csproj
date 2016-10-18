@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\ConsoleData.cs" />
-    <Compile Include="DataAccess\ConsoleReader.cs" />
-    <Compile Include="DataAccess\ConsoleWriter.cs" />
+    <Compile Include="DuplicateDetectStrategy\DuplicateDetector.cs" />
+    <Compile Include="IO_Operations\Data.cs" />
+    <Compile Include="IO_Operations\ConsoleReader.cs" />
+    <Compile Include="IO_Operations\ConsoleWriter.cs" />
     <Compile Include="DuplicateDetectStrategy\DetectionMode.cs" />
     <Compile Include="DuplicateDetectStrategy\DuplicateIterationDetector.cs" />
     <Compile Include="DuplicateDetectStrategy\IterationStrategies\DetectSameAddress.cs" />
