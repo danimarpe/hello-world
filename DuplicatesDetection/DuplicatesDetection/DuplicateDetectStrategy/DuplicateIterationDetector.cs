@@ -6,15 +6,15 @@ namespace DuplicatesDetection.DuplicateDetectStrategy
     /// <summary>
     /// Detects duplicate users
     /// </summary>
-    public class DuplicateLinqDetector
+    public class DuplicateIterationDetector
     {
         IDuplicateDetect sameAddress;
         IDuplicateDetect sameEmail;
 
-        public DuplicateLinqDetector()
+        public DuplicateIterationDetector()
         {
-            sameAddress = new LinqStrategies.DetectSameAddress();
-            sameEmail = new LinqStrategies.DetectSameEmail();
+            sameAddress = new IterationStrategies.DetectSameAddress();
+            sameEmail = new IterationStrategies.DetectSameEmail();
         }
 
         public List<UserEntity> Detect(List<UserEntity> orders)

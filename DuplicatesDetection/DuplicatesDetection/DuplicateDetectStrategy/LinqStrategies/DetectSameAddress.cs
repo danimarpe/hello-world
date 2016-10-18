@@ -2,7 +2,7 @@
 using System.Linq;
 using DuplicatesDetection.Entities;
 
-namespace DuplicatesDetection.DuplicateDetectStrategy
+namespace DuplicatesDetection.DuplicateDetectStrategy.LinqStrategies
 {
     class DetectSameAddress : IDuplicateDetect
     {
