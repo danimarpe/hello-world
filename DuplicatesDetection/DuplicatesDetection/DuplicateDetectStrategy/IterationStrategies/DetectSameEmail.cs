@@ -31,7 +31,7 @@ namespace DuplicatesDetection.DuplicateDetectStrategy.IterationStrategies
         {
             foreach (UserEntity user in users)
             {
-                if (user.User_ID == currentUser.User_ID &&
+                if (user.UserName == currentUser.UserName &&
                     user.Email == currentUser.Email &&
                     user.Credit_Card != currentUser.Credit_Card)
                     return true;
