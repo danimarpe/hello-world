@@ -14,7 +14,7 @@ namespace DuplicatesDetection.DuplicateDetectStrategy.IterationStrategies
 
             foreach (UserEntity user in users)
             {
-                if (HasRepeatedEmail(user, users))
+                if (HasRepeatedEmail(user, users)) //
                     duplicates.Add(user);
             }
 
