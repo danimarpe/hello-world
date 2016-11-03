@@ -51,7 +51,7 @@ namespace DuplicatesDetection.Tests
 
             sw.Start();
             
-            Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.LINQ);
+            var duplicates = Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.LINQ);
             sw.Stop();
 
             TimeSpan timeElapsed = sw.Elapsed;
@@ -64,7 +64,7 @@ namespace DuplicatesDetection.Tests
 
             sw.Start();
 
-            Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.ITERATION);
+            var duplicates = Program.DetectDuplicates(input, DuplicateDetectStrategy.DetectionMode.ITERATION);
 
             TimeSpan timeElapsed = sw.Elapsed;
         }
